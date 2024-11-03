@@ -1,3 +1,7 @@
 body{
-    background-color: hotpink;
+    background-color: yellowgreen;
+}
+
+h2 {
+    border-top: 1px dashed;
 }
