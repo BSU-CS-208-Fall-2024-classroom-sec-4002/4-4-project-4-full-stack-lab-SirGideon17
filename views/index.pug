@@ -5,12 +5,30 @@ head
     title My First Full Stack
 body
     h1 Simple TODO APP
-    form(action="TODO" method="POST")
+    form(action="app.post" method="TODO")
         p Add TODO:
             input(type="text" name="title" placeholder="TODO" ) 
 body
     h2 My TODO List
  
     //- ul
-    //-     each val in TODO
-    //-     li = val
+    //- - for (let i = 0; i < tasks.length; i++)
+    //-     li= tasks[i].id + " " + tasks[i].task
+    //-         form(action="/delete", method="post")
+    //-             input(type="hidden", name="id" value=tasks[i].id)
+    //-             input(type="submit", value="Delete")
+
+    //- ul
+    //-     li Task 1
+    //-     a.btn(href='#') Delete
+
+    //-     li Task 2
+    //-     a.btn(href="#") Delete
+
+
+        //- This is old code that I want to keep for now.
+        //- li form(method="get" action=/"blarg")
+            button(type="submit") delete
+
+            Simplier button
+        //- .btn(href='#') Delete
